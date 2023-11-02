@@ -1,0 +1,61 @@
+body {
+    height: 600px;
+    border-color: #888;
+}
+
+.bg {
+    background: #eee;
+}
+
+.item {
+    resize: none;
+    height: 100px;
+    cursor: pointer;
+    white-space: pre-wrap !important;
+}
+
+.item:hover {
+    border: 1px solid #bbb;
+}
+
+input, button, textarea, .item {
+    font-size: 12px !important;
+}
+
+.titlebar {
+    height: 30px;
+    user-select: none;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+}
+
+.titlebar-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+.titlebar-button:hover {
+    cursor: pointer;
+    background: #fff;
+}
+
+#content {
+    height: 566px;
+    position: relative;
+    top: 7px;
+}
+
+::-webkit-scrollbar {
+    width: 5px; /* 垂直滚动条宽度 */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #bbb; /* 滚动条拖动块的背景色 */
+}
